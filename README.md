@@ -28,8 +28,19 @@ Le dataset contient des informations détaillées sur les clients :
 - Comportement d’achat (dépenses par catégorie, fréquence)
 - Interactions marketing (réponses aux campagnes)
 - **Variable cible : Response (réponse à la dernière campagne)**
-  
 
+### 🧹 Nettoyage du dataset
+
+Le Dataset a été nettoyé avant l'analyse de données pour limiter le bruit inutile. 
+
+Les points majeurs de ce nettoyage : 
+- Gestion des doublons et des valeurs nulles ;
+- Visualisation et nettoyage des outliers ;
+- Traitement des dates ;
+- Calcule de features sur base d'analyse, comme l'age, l'ancienneté, le total des dépenses et le total de campagnes précédemment acceptées ; 
+- Suppressions des variables à valeur unique ou sans utilité dans nnotre cas.     
+
+---
 ### 📉 Analyse des données
 
 L’analyse exploratoire met en évidence plusieurs insights clés :
