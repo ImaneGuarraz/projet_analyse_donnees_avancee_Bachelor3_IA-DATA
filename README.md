@@ -195,7 +195,7 @@ _Retrouver tout le détail des libairies exploitées dans le script Python._
 
 ---
 
-### 🚀 Lancer le projet
+### 🚀 Lancer le projet dans un Terminal 
 
 pip install -r requirements.txt
 streamlit run app.py
