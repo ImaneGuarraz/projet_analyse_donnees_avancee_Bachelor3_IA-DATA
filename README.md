@@ -15,7 +15,10 @@ L’objectif est de passer de données brutes à des insights actionnables perme
 - d’augmenter le ROI des campagnes
 - et de mettre en place un scoring prédictif
 
+
 ### Comment transformer un dataset marketing en un système décisionnel capable d’éclairer la segmentation, le ciblage, la performance campagne et la feuille de route analytique de l’entreprise ?
+
+
 
 ### Description du dataset
 _2240 lignes & 29 colonnes_ 
@@ -25,6 +28,7 @@ Le dataset contient des informations détaillées sur les clients :
 - Comportement d’achat (dépenses par catégorie, fréquence)
 - Interactions marketing (réponses aux campagnes)
 - **Variable cible : Response (réponse à la dernière campagne)**
+
 
 ### Pipeline du projet
 
@@ -36,6 +40,7 @@ D --> E[Segmentation]
 E --> F[Modélisation & Scoring]
 F --> G[Dashboard]
 G --> H[Recommandations business]
+
 
 ### Analyse des données
 
@@ -55,6 +60,7 @@ _Retrouvez toutes les informations complémentaires directement dans le script N
 - validation du modèle
 
 Ces étapes garantissent la fiabilité des résultats.
+
 
 ### Segmentation client
 
@@ -101,6 +107,7 @@ Faible valeur actuelle, mais potentiel long terme. Ce sont souvent des clients e
 À nourrir progressivement, sans investissement marketing lourd.
 Cette segmentation permet d’adapter les stratégies marketing à chaque profil.
 
+
 ### KPI métier
 
 Le projet introduit plusieurs indicateurs clés :
@@ -111,6 +118,7 @@ Le projet introduit plusieurs indicateurs clés :
 - Score client
 
 Ces KPI permettent un pilotage data-driven.
+
 
 ### Modélisation prédictive
 
@@ -133,6 +141,7 @@ Variables utilisées :
 **Segment 3 — Score 20.5**
 **Segment 0 — Score 19.0**
 
+
 ### Dashboard
 
 Un dashboard interactif (Streamlit) a été développé pour :
@@ -141,6 +150,7 @@ Un dashboard interactif (Streamlit) a été développé pour :
 - analyser les segments
 - visualiser les performances marketing
 - identifier les clients à cibler
+
 
 ### Industrialisation
 
@@ -152,6 +162,7 @@ Le projet est structuré sous forme de pipeline reproductible :
 
 _Il peut être intégré dans un environnement réel (CRM, BI)._
 
+
 ### Recommandations business
 
 Les principaux leviers identifiés sont :
@@ -159,6 +170,7 @@ Les principaux leviers identifiés sont :
 - concentrer les efforts sur les segments à forte valeur
 - réactiver les clients inactifs
 - suivre les performances via des KPI
+
 
 ### Technologies utilisées
 - Python 3.12.7
@@ -170,10 +182,12 @@ Les principaux leviers identifiés sont :
 
 _Retrouver tout le détail des libairies exploitées dans le script Python._ 
 
+
 ### Lancer le projet
 
 pip install -r requirements.txt
 streamlit run app.py
+
 
 ### Ressources et liens utiles 
 
@@ -182,6 +196,7 @@ streamlit run app.py
 - PDF de notre rapport d'activité, également disponible via le lien CANVA : https://canva.link/sd1hpyy8s0bgec0
 - Notebook Python
 - Lien du Dataset : https://www.kaggle.com/datasets/rodsaldanha/arketing-campaign
+
 
 ### Cheffes de projet 
 - Olympe DOTSU
