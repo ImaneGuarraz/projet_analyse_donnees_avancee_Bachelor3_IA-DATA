@@ -28,19 +28,7 @@ Le dataset contient des informations détaillées sur les clients :
 - Comportement d’achat (dépenses par catégorie, fréquence)
 - Interactions marketing (réponses aux campagnes)
 - **Variable cible : Response (réponse à la dernière campagne)**
-
-
-### ➡️ Pipeline du projet
-
-flowchart LR
-A[Données brutes] --> B[Nettoyage]
-B --> C[Feature Engineering]
-C --> D[Analyse exploratoire]
-D --> E[Segmentation]
-E --> F[Modélisation & Scoring]
-F --> G[Dashboard]
-G --> H[Recommandations business]
-
+  
 
 ### 📉 Analyse des données
 
