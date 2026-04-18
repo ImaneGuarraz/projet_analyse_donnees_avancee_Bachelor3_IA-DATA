@@ -4,7 +4,7 @@
 <p align="center"> <img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python"> <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-orange?style=for-the-badge&logo=pandas"> <img src="https://img.shields.io/badge/Scikit--Learn-ML-yellow?style=for-the-badge&logo=scikit-learn"> <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge"> </p>
 
 
-### Vue d’ensemble du projet
+### 💡 Vue d’ensemble du projet
 
 Ce projet vise à transformer un dataset marketing en un véritable système de décision (Decision Intelligence).
 
@@ -20,7 +20,7 @@ L’objectif est de passer de données brutes à des insights actionnables perme
 
 
 
-### Description du dataset
+### 💿 Description du dataset
 _2240 lignes & 29 colonnes_ 
 
 Le dataset contient des informations détaillées sur les clients : 
@@ -30,7 +30,7 @@ Le dataset contient des informations détaillées sur les clients :
 - **Variable cible : Response (réponse à la dernière campagne)**
 
 
-### Pipeline du projet
+### ➡️ Pipeline du projet
 
 flowchart LR
 A[Données brutes] --> B[Nettoyage]
@@ -42,7 +42,7 @@ F --> G[Dashboard]
 G --> H[Recommandations business]
 
 
-### Analyse des données
+### 📉 Analyse des données
 
 L’analyse exploratoire met en évidence plusieurs insights clés :
 - Une forte relation entre revenu et niveau de dépenses
@@ -62,7 +62,7 @@ _Retrouvez toutes les informations complémentaires directement dans le script N
 Ces étapes garantissent la fiabilité des résultats.
 
 
-### Segmentation client
+### 🎯 Segmentation client
 
 Une segmentation a été réalisée afin d’identifier 4 différents profils (kmeans, test Elbow et Silhouette Score) :
 
@@ -108,7 +108,7 @@ Faible valeur actuelle, mais potentiel long terme. Ce sont souvent des clients e
 Cette segmentation permet d’adapter les stratégies marketing à chaque profil.
 
 
-### KPI métier
+### 🎯 KPI métier
 
 Le projet introduit plusieurs indicateurs clés :
 
@@ -120,7 +120,7 @@ Le projet introduit plusieurs indicateurs clés :
 Ces KPI permettent un pilotage data-driven.
 
 
-### Modélisation prédictive
+### 📊 Modélisation prédictive
 
 Un modèle de machine learning a été développé pour prédire la réponse client.
 
@@ -142,7 +142,7 @@ Variables utilisées :
 **Segment 0 — Score 19.0**
 
 
-### Dashboard
+### 📈 Dashboard
 
 Un dashboard interactif (Streamlit) a été développé pour :
 
@@ -152,7 +152,7 @@ Un dashboard interactif (Streamlit) a été développé pour :
 - identifier les clients à cibler
 
 
-### Industrialisation
+### 🏭 Industrialisation
 
 Le projet est structuré sous forme de pipeline reproductible :
 - préparation des données
@@ -163,7 +163,7 @@ Le projet est structuré sous forme de pipeline reproductible :
 _Il peut être intégré dans un environnement réel (CRM, BI)._
 
 
-### Recommandations business
+### 📊 Recommandations business
 
 Les principaux leviers identifiés sont :
 - cibler les clients à fort score
@@ -172,7 +172,7 @@ Les principaux leviers identifiés sont :
 - suivre les performances via des KPI
 
 
-### Technologies utilisées
+### 💻 Technologies utilisées
 - Python 3.12.7
 - Pandas / NumPy
 - Matplotlib / Seaborn
@@ -183,13 +183,13 @@ Les principaux leviers identifiés sont :
 _Retrouver tout le détail des libairies exploitées dans le script Python._ 
 
 
-### Lancer le projet
+### 🚀 Lancer le projet
 
 pip install -r requirements.txt
 streamlit run app.py
 
 
-### Ressources et liens utiles 
+### 📁 Ressources et liens utiles 
 
 - README (document exploré actuellement)
 - PDF de présentation du projet et des attendus transmis par le professeur Alioune Sambe
@@ -198,7 +198,7 @@ streamlit run app.py
 - Lien du Dataset : https://www.kaggle.com/datasets/rodsaldanha/arketing-campaign
 
 
-### Cheffes de projet 
+### 👩🏽‍💻👩🏿‍💻 Cheffes de projet 
 - Olympe DOTSU
 - Imane GUARRAZ
 
