@@ -1,150 +1,181 @@
-# projet_analyse_donnees_avancee_Bachelor3_IA-DATA
-Comment transformer un dataset marketing en un système décisionnel capable d’éclairer la segmentation, le ciblage, la performance campagne et la feuille de route analytique de l’entreprise ?
+# **Advanced Marketing Analytics**
+## _Decision Intelligence • Segmentation • Scoring • BI_
 
-LIEN DATASET : https://www.kaggle.com/datasets/rodsaldanha/arketing-campaign
-
-LIEN CANVA : https://canva.link/sd1hpyy8s0bgec0 
-
-🚀 📊 Advanced Marketing Analytics
-Decision Intelligence • Segmentation • Scoring • BI
 <p align="center"> <img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python"> <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-orange?style=for-the-badge&logo=pandas"> <img src="https://img.shields.io/badge/Scikit--Learn-ML-yellow?style=for-the-badge&logo=scikit-learn"> <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge"> </p>
-🎯 Project Overview
 
-This project transforms a marketing dataset into a decision intelligence system designed to support business strategy.
 
-The goal is to move from raw data to actionable insights, enabling:
+##### Vue d’ensemble du projet
 
-smarter customer segmentation
-optimized campaign targeting
-improved marketing ROI
-predictive scoring for decision-making
-🧠 Key Business Question
+Ce projet vise à transformer un dataset marketing en un véritable système de décision (Decision Intelligence).
 
-How can we turn marketing data into a decision system that improves segmentation, targeting, and campaign performance?
+L’objectif est de passer de données brutes à des insights actionnables permettant :
 
-📊 Dataset Description
+- d’améliorer la segmentation client
+- d’optimiser le ciblage marketing
+- d’augmenter le ROI des campagnes
+- et de mettre en place un scoring prédictif
 
-The dataset contains customer-level information including:
+### Comment transformer un dataset marketing en un système décisionnel capable d’éclairer la segmentation, le ciblage, la performance campagne et la feuille de route analytique de l’entreprise ?
 
-socio-demographic data (age, income, education)
-purchasing behavior (product spending, frequency)
-marketing interactions (campaign responses)
+##### Description du dataset
+_2240 lignes & 29 colonnes_ 
 
-🎯 Target variable: Response (customer reaction to last campaign)
+Le dataset contient des informations détaillées sur les clients : 
+- Données socio-démographiques (âge, revenu, éducation)
+- Comportement d’achat (dépenses par catégorie, fréquence)
+- Interactions marketing (réponses aux campagnes)
+- **Variable cible : Response (réponse à la dernière campagne)**
 
-Project Pipeline
-
-Mermaid : 
+##### Pipeline du projet
 
 flowchart LR
-A[Raw Data] --> B[Data Cleaning]
+A[Données brutes] --> B[Nettoyage]
 B --> C[Feature Engineering]
-C --> D[Exploratory Analysis]
+C --> D[Analyse exploratoire]
 D --> E[Segmentation]
-E --> F[Modeling & Scoring]
-F --> G[Dashboard & Insights]
-G --> H[Business Recommendations]
+E --> F[Modélisation & Scoring]
+F --> G[Dashboard]
+G --> H[Recommandations business]
 
-Data Analysis
+##### Analyse des données
 
-The exploratory analysis highlights key patterns:
+L’analyse exploratoire met en évidence plusieurs insights clés :
+- Une forte relation entre revenu et niveau de dépenses
+- Les clients les plus dépensiers sont les plus susceptibles de répondre
+- La récence influence fortement l’engagement
+- L’historique des campagnes est un excellent prédicteur
 
-Strong relationship between income and spending
-Customers with higher spending are more likely to respond
-Recency plays a critical role in engagement
-Past campaign acceptance is a strong predictor of future behavior
+_Retrouvez toutes les informations complémentaires directement dans le script Notebook ou dans le rapport de synthèse._
 
-Customer Segmentation
+**Robustesse analytique** : Des analyses complémentaires ont été réalisées.
 
-Customers were segmented using clustering techniques into distinct groups:
+- vérification de la multicolinéarité (VIF)
+- matrice de corrélation
+- analyse des outliers
+- validation du modèle
 
-💎 High-value customers (VIP)
-🔁 Regular customers
-🚀 High-potential customers
-⚠️ Low-value customers
+Ces étapes garantissent la fiabilité des résultats.
 
-This segmentation enables targeted marketing strategies.
+##### Segmentation client
 
-📈 Key Metrics (KPI)
+Une segmentation a été réalisée afin d’identifier 4 différents profils (kmeans, test Elbow et Silhouette Score) :
 
-The project introduces business-oriented KPIs:
+**Segment 1 — Les Premium**
 
-Campaign response rate
-Average customer value
-Segment performance
-Customer scoring index
+- Très haut revenu
+- Très forte dépense
+- Très bon taux de réponse
+- Activité digitale correcte
 
-These indicators support data-driven decision-making.
+Ce sont tes clients VIP. Ils génèrent la majorité de la valeur et réagissent très bien aux campagnes.
+C’est le segment à prioriser dans toutes les actions marketing.
 
-🤖 Predictive Modeling
+**Segment 2 — Les Digitaux à fort potentiel**
 
-A machine learning model was developed to predict customer response.
+- Revenu élevé
+- Dépense élevée
+- Activité web forte
+- Taux de réponse moyen
 
-✔️ Features used:
-Income
-Total spending
-Recency
-Campaign engagement
-🎯 Output:
-Propensity score (probability of response)
+Ils ont un potentiel énorme. Avec un meilleur engagement, ils pourraient rejoindre les Premium.
+C’est un segment à travailler, notamment via des campagnes digitales personnalisées.
 
-👉 This allows:
+**Segment 3 — Les Seniors à faible valeur**
 
-smarter targeting
-cost reduction
-ROI optimization
-📊 Dashboard
+- Revenu moyen
+- Dépense faible
+- Taux de réponse très faible
+- Activité web modérée
 
-An interactive dashboard (Streamlit) was built to:
+Segment peu rentable. Il ne faut pas les cibler massivement.
+À privilégier pour des actions de fidélisation douce, pas pour des campagnes coûteuses.
 
-monitor KPIs
-explore customer segments
-analyze campaign performance
-identify high-value targets
-🧪 Analytical Robustness
+**Segment 0 — Les Jeunes / ménages modestes**
 
-The analysis includes validation steps:
+- Revenu faible
+- Dépense faible
+- Taux de réponse moyen
+- Activité web élevée
 
-multicollinearity checks (VIF)
-correlation analysis
-outlier sensitivity
-model evaluation
+Faible valeur actuelle, mais potentiel long terme. Ce sont souvent des clients en début de cycle de vie.
+À nourrir progressivement, sans investissement marketing lourd.
+Cette segmentation permet d’adapter les stratégies marketing à chaque profil.
 
-This ensures reliability and consistency of results.
+##### KPI métier
 
-⚙️ Industrialization
+Le projet introduit plusieurs indicateurs clés :
 
-The project is structured as a reproducible pipeline:
+- Taux de réponse aux campagnes
+- Dépense moyenne par client
+- Performance par segment
+- Score client
 
-data preprocessing
-feature engineering
-modeling
-scoring
+Ces KPI permettent un pilotage data-driven.
 
-The system can be updated with new data and integrated into a CRM or BI tool.
+##### Modélisation prédictive
 
-💡 Business Recommendations
+Un modèle de machine learning a été développé pour prédire la réponse client.
 
-Key strategic insights:
+Variables utilisées :
+- Revenu
+- Dépenses
+- Récence
+- Engagement marketing
 
-🎯 Prioritize high-value and high-propensity customers
-💰 Optimize marketing spend on responsive segments
-🔁 Reactivate inactive but high-income customers
-📊 Implement continuous KPI monitoring
-🛠️ Tech Stack
-Python
-Pandas / NumPy
-Matplotlib / Seaborn
-Scikit-learn
-Statsmodels
-Streamlit
+**Résultat : Un score de propension (probabilité de réponse)** qui permet : 
 
-🚀 How to Run
+- un meilleur ciblage
+- une réduction des coûts
+- une optimisation du ROI
+
+**Segment 1 — Score 48.6**
+**Segment 2 — Score 40.1**
+**Segment 3 — Score 20.5**
+**Segment 0 — Score 19.0**
+
+##### Dashboard
+
+Un dashboard interactif (Streamlit) a été développé pour :
+
+- suivre les KPI
+- analyser les segments
+- visualiser les performances marketing
+- identifier les clients à cibler
+
+##### Industrialisation
+
+Le projet est structuré sous forme de pipeline reproductible :
+- préparation des données
+- transformation
+- modélisation
+- scoring
+
+_Il peut être intégré dans un environnement réel (CRM, BI)._
+
+##### Recommandations business
+
+Les principaux leviers identifiés sont :
+- cibler les clients à fort score
+- concentrer les efforts sur les segments à forte valeur
+- réactiver les clients inactifs
+- suivre les performances via des KPI
+
+##### Technologies utilisées
+- Python 3.12.7
+- Pandas / NumPy
+- Matplotlib / Seaborn
+- Scikit-learn
+- Statsmodels
+- Streamlit
+
+_Retrouver tout le détail des libairies exploitées dans le script Python._ 
+
+##### Lancer le projet
 
 pip install -r requirements.txt
 streamlit run app.py
 
-📁 Project Structure
+##### Structure du projet
 
 ├── data/
 ├── notebook/
@@ -152,10 +183,18 @@ streamlit run app.py
 ├── requirements.txt
 └── README.md
 
-👥 Authors
-Olympe DOTSU
-Imane GUARRAZ
+##### Ressources et liens utiles 
 
-Final Insight
+- README (document exploré actuellement)
+- PDF de présentation du projet et des attendus transmis par le professeur Alioune Sambe
+- PDF de notre rapport d'activité, également disponible via le lien CANVA : https://canva.link/sd1hpyy8s0bgec0
+- Notebook Python
+- Lien du Dataset : https://www.kaggle.com/datasets/rodsaldanha/arketing-campaign
 
-This project demonstrates how data can be transformed into a strategic asset, enabling companies to move from intuition to data-driven decision making.
+##### Cheffes de projet 
+- Olympe DOTSU
+- Imane GUARRAZ
+
+##### Conclusion
+
+Ce projet démontre comment transformer des données marketing en un outil stratégique de décision, permettant de passer d’une approche intuitive à une approche data-driven.
